@@ -1,0 +1,16 @@
+{
+  "name": "mi-proyecto-lint",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "lint:js": "eslint \"src/js/**/*.js\"",
+    "lint:js:fix": "eslint \"src/js/**/*.js\" --fix",
+    "lint:html": "htmlhint \"src/**/*.html\"",
+    "lint": "npm run lint:js && npm run lint:html",
+    "lint:fix": "npm run lint:js:fix && npm run lint:html"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "htmlhint": "^1.0.0"
+  }
+}
